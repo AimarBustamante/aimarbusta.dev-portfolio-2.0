@@ -1,0 +1,99 @@
+---
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import InstagramIcon from "../components/icons/InstagramIcon.astro";
+import WhatsAppIcon from "../components/icons/WhatsAppIcon.astro";
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer
+	class="rounded-lg shadow backdrop-blur-lg w-full xl:w-[1120px] mx-auto m-7"
+>
+	<div
+		class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+	>
+		<span class="text-sm sm:text-center text-gray-400"
+			>© {currentYear}
+			<p class="inline-block">aimarbusta</p>. Todos los derechos
+			reservados.
+		</span>
+		<ul
+			class="flex flex-wrap items-center mt-3 text-sm font-medium text-white/90 sm:mt-0"
+		>
+			<li>
+				<a href="/#inicio" class="hover:underline me-4 md:me-6"
+					>Inicio</a
+				>
+			</li>
+			<li>
+				<a href="#sobre-mi" class="hover:underline me-4 md:me-6"
+					>Sobre Mi</a
+				>
+			</li>
+			<li>
+				<a href="#habilidades" class="hover:underline me-4 md:me-6"
+					>Habilidades</a
+				>
+			</li>
+			<li>
+				<a href="#proyectos" class="hover:underline me-4 md:me-6"
+					>Proyectos</a
+				>
+			</li>
+			<li>
+				<a href="/contact" class="hover:underline">Contacto</a>
+			</li>
+		</ul>
+	</div>
+
+	<hr class="my-6 sm:mx-auto border-gray-600 lg:my-8" />
+
+	<div class="flex items-center justify-end gap-6">
+		<a
+			href="https://www.linkedin.com/in/aimarbustamante/"
+			target="_blank"
+			rel="noopener"
+			class="text-gray-500 hover:text-gray-400 transition"
+		>
+			<LinkedInIcon class="size-6" />
+		</a>
+
+		<a
+			href="https://github.com/AimarBustamante"
+			target="_blank"
+			rel="noopener"
+			class="text-gray-500 hover:text-gray-400 transition"
+		>
+			<GitHubIcon class="size-6" />
+		</a>
+
+		<a
+			href="mailto:aimarbustamante379@hotmail.com"
+			target="_blank"
+			rel="noopener"
+			class="text-gray-500 hover:text-gray-400 transition"
+		>
+			<MailIcon class="size-6" />
+		</a>
+
+		<a
+			href="https://www.instagram.com/aimarbusta.dev/"
+			target="_blank"
+			rel="noopener"
+			class="text-gray-500 hover:text-gray-400 transition"
+		>
+			<InstagramIcon class="size-6" />
+		</a>
+
+		<a
+			href="https://wa.me/50765167602"
+			target="_blank"
+			rel="noopener"
+			class="text-gray-500 hover:text-gray-400 transition"
+		>
+			<WhatsAppIcon class="size-6" />
+		</a>
+	</div>
+</footer>

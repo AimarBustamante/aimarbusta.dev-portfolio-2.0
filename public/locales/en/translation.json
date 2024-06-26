@@ -1,0 +1,33 @@
+{
+	"Layout": {
+		"title": "Aimar Bustamante - Frontend Web Developer with 2 Years of Experience",
+		"description": "Welcome to my portfolio. I'm Aimar, a frontend developer with 2 years of experience creating innovative and functional web solutions. From Panama 🇵🇦, I specialize in the latest web development technologies. Explore my projects and discover how I can help take your business to the next level."
+	},
+	"Hero": {
+		"title": "Hello👋🏻! I'm Aimar",
+		"subtitle": "With <span class=\"text-blue-500/90 font-medium\">2 years of experience</span> as a frontend developer, passionate about creating <span class=\"text-yellow-500/90 font-medium\">innovative and functional solutions</span>. From <span class=\"text-red-500/90 font-medium\">Panama</span> 🇵🇦, bringing my talent <span class=\"text-green-500/90 font-medium\">to the world</span>."
+	},
+	"AboutMe": {
+		"title": "About Me",
+		"1st-paragraph": "My name is Aimar, and I was born on November 15, 2004, in Panama City. Since I was young, technology has been my passion. My journey in programming started with Python, but upon discovering HTML, I fully immersed myself in the world of web development.",
+		"2nd-paragraph": "I consider myself a fervent self-learner. Continuously learning and improving is something that motivates me, and I enjoy sharing what I know with others.",
+		"3rd-paragraph": "Throughout my career, I have had the opportunity to work on various projects that have allowed me to grow and acquire new skills. I am committed to continuous improvement and always look for ways to add value to every team I collaborate with."
+	},
+	"Skills": {
+		"languages": "Programming Languages",
+		"frameworks": "Frameworks",
+		"no-code": "No Code",
+		"design": "Design",
+		"others": "Others"
+	},
+	"Projects": {
+		"project-1": "My Portfolio",
+		"description-1": "My most recent personal portfolio and flagship project. A modern, aesthetic, and improved version of my old portfolio showcasing my skills as a developer and my projects created with the latest technologies.",
+		"project-2": "GuitarLA - TS",
+		"description-2": "E-commerce platform for guitars that includes a shopping cart. Users can browse a selection of guitars, add items to their cart, and manage quantities and prices within it.",
+		"project-3": "Tip and Consumption Calculator",
+		"description-3": "A web application that includes a menu where you can place an order and add a tip.",
+		"project-4": "Calorie Counter",
+		"description-4": "A web application where you can track the calories consumed along with the calories burned through physical activity."
+	}
+}

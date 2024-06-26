@@ -1,0 +1,57 @@
+---
+import Badge from "../components/Badge.astro";
+
+// Icons
+import SocialPill from "../components/SocialPill.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import InstagramIcon from "../components/icons/InstagramIcon.astro";
+import WhatsAppIcon from "../components/icons/WhatsAppIcon.astro";
+
+const personalImageAlt = "Aimar Bustamante";
+---
+
+<img
+	class="rounded-full size-16 mb-4 p-1 ring-2 ring-blue-300 dark:ring-blue-500"
+	src="/images/aimarbusta-photo.jpg"
+	alt=`Foto de ${personalImageAlt}`
+/>
+<h1
+	class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-col gap-y-4 md:flex-row md:gap-x-4 pb-6 lg:pb-10"
+>
+	¡Hola👋🏻! Soy Aimar<a
+		href="https://www.linkedin.com/in/aimarbustamante/"
+		target="_blank"
+		rel="noopener"
+		class="flex items-center transition md:justify-center md:hover:scale-105 italic"
+		><Badge>#OpenToWork</Badge></a
+	>
+</h1>
+
+<h2 class="text-xl lg:text-2xl opacity-80 text-pretty max-w-[700px]">
+	Con <span class="text-blue-500 font-medium">2 años de experiencia</span> como
+	desarrollador frontend, apasionado por crear <span
+		class="text-yellow-500 font-medium"
+		>soluciones innovadoras y funcionales</span
+	>. Desde <span class="text-red-500 font-medium">Panamá</span> 🇵🇦, llevando mi
+	talento <span class="text-green-500 font-medium">al mundo</span>.
+</h2>
+
+<nav class="flex gap-4 mt-5 flex-wrap">
+	<SocialPill href="https://www.linkedin.com/in/aimarbustamante/">
+		<LinkedInIcon class="size-4 md:size-6" /> LinkedIn
+	</SocialPill>
+	<SocialPill href="https://github.com/AimarBustamante">
+		<GitHubIcon class="size-4 md:size-6" /> GitHub
+	</SocialPill>
+	<SocialPill href="mailto:aimarbustamante379@hotmail.com">
+		<MailIcon class="size-4 md:size-6" /> Correo
+	</SocialPill>
+	<SocialPill href="https://www.instagram.com/aimarbusta.dev/">
+		<InstagramIcon class="size-4 md:size-6" /> Instagram
+	</SocialPill>
+	<SocialPill href="https://wa.me/50765167602">
+		<WhatsAppIcon class="size-4 md:size-6" /> WhatsApp
+	</SocialPill>
+</nav>

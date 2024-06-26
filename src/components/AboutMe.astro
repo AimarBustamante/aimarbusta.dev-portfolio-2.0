@@ -1,0 +1,35 @@
+---
+const personalImageAlt = "Aimar Bustamante";
+---
+
+<article
+	class="mb-8 flex flex-col items-center justify-center gap-8 text-gray-300 md:flex-row"
+>
+	<div
+		class="[&>p]:mb-4 [&>p>strong]:font-normal text-pretty order-2 md:order-1"
+	>
+		<p>
+			Me llamo Aimar, y nací el 15 de noviembre de 2004 en Ciudad de
+			Panamá. Desde pequeño, la tecnología ha sido mi pasión. Mi viaje en
+			la programación comenzó con Python, pero al descubrir HTML, me
+			sumergí por completo en el mundo del desarrollo web. 
+		</p>
+
+		<p>
+			Me considero a mi mismo un ferviente autodidacta, Aprender y mejorar continuamente es algo que me motiva, y disfruto compartiendo lo que sé con otros.
+		</p>
+
+		<p>
+			A lo largo de mi carrera, he tenido la oportunidad de trabajar en diversos proyectos que me han permitido crecer y adquirir nuevas habilidades. Estoy comprometido con la mejora continua y siempre busco la manera de aportar valor a cada equipo con el que colaboro.
+		</p>
+	</div>
+
+	<img
+		width="200"
+		height="200"
+		src="/images/me.webp"
+		alt=`Foto de ${personalImageAlt}`
+		class="order-1 object-cover w-64 h-96 p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+		style="object-position: 50% 50%"
+	/>
+</article>

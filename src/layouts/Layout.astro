@@ -1,51 +1,111 @@
 ---
+import "@fontsource-variable/onest";
+import NavBar from "../components/NavBar.astro";
+import Footer from "../components/Footer.astro";
+
 interface Props {
 	title: string;
+	description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang=es>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<meta name="author" content="Aimar Bustamante" />
+		<meta name="copyright" content="Todos los derechos reservados" />
+		<meta name="robots" content="index, follow" />
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://metatags.io/" />
+		<meta
+			property="og:title"
+			content="Aimar Bustamante - Desarrollador Web Frontend con 2 años de experiencia"
+		/>
+		<meta
+			property="og:description"
+			content="Bienvenido a mi portafolio. Soy Aimar, un desarrollador frontend con 2 años de experiencia creando soluciones web innovadoras y funcionales. Desde Panamá 🇵🇦, me especializo en HTML, CSS, JavaScript y las últimas tecnologías de desarrollo web. Explora mis proyectos y descubre cómo puedo ayudarte a llevar tu negocio al siguiente nivel."
+		/>
+		<meta
+			property="og:image"
+			content="https://metatags.io/images/meta-tags.png"
+		/>
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://metatags.io/" />
+		<meta
+			property="twitter:title"
+			content="Aimar Bustamante - Desarrollador Web Frontend con 2 años de experiencia"
+		/>
+		<meta
+			property="twitter:description"
+			content="Bienvenido a mi portafolio. Soy Aimar, un desarrollador frontend con 2 años de experiencia creando soluciones web innovadoras y funcionales. Desde Panamá 🇵🇦, me especializo en HTML, CSS, JavaScript y las últimas tecnologías de desarrollo web. Explora mis proyectos y descubre cómo puedo ayudarte a llevar tu negocio al siguiente nivel."
+		/>
+		<meta
+			property="twitter:image"
+			content="https://metatags.io/images/meta-tags.png"
+		/>
+
+		<meta
+			property="twitter:description"
+			content="Bienvenido a mi portafolio. Soy Aimar, un desarrollador frontend con 2 años de experiencia creando soluciones web innovadoras y funcionales. Desde Panamá 🇵🇦, me especializo en HTML, CSS, JavaScript y las últimas tecnologías de desarrollo web. Explora mis proyectos y descubre cómo puedo ayudarte a llevar tu negocio al siguiente nivel."
+		/>
+		<meta
+			property="twitter:image"
+			content="https://metatags.io/images/meta-tags.png"
+		/>
+		<!-- FAVICON -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/images/favicon_io/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/images/favicon_io/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/images/favicon_io/favicon-16x16.png"
+		/>
 	</head>
 	<body>
+		<NavBar />
 		<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
 	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
+		color-scheme: light dark;
 	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
+		font-family: "Onest Variable", system-ui, sans-serif;
+		scroll-behavior: smooth;
 	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
+
+	body {
+		background-image: linear-gradient(60deg, #0c1227 20%, #0b193c 80%);
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+
+	@media (prefers-reduce-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
 	}
 </style>

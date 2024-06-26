@@ -1,0 +1,33 @@
+{
+	"Layout": {
+		"title": "Aimar Bustamante - Desarrollador Web Frontend con 2 años de experiencia",
+		"description": "Bienvenido a mi portafolio. Soy Aimar, un desarrollador frontend con 2 años de experiencia creando soluciones web innovadoras y funcionales. Desde Panamá 🇵🇦, me especializo en las últimas tecnologías de desarrollo web. Explora mis proyectos y descubre cómo puedo ayudarte a llevar tu negocio al siguiente nivel."
+	},
+	"Hero": {
+		"title": "¡Hola👋🏻! Soy Aimar",
+		"subtitle": "Con <span class=\"text-blue-500/90 font-medium\">2 años de experiencia</span> como desarrollador frontend, apasionado por crear <span class=\"text-yellow-500/90 font-medium\">soluciones innovadoras y funcionales</span>. Desde <span class=\"text-red-500/90 font-medium\">Panamá</span> 🇵🇦, llevando mi talento <span class=\"text-green-500/90 font-medium\">al mundo</span>."
+	},
+	"AboutMe": {
+		"title": "Sobre Mi",
+		"1st-paragraph": "Me llamo Aimar, y nací el 15 de noviembre de 2004 en Ciudad de Panamá. Desde pequeño, la tecnología ha sido mi pasión. Mi viaje en la programación comenzó con Python, pero al descubrir HTML, me sumergí por completo en el mundo del desarrollo web.",
+		"2nd-paragraph": "Me considero a mi mismo un ferviente autodidacta, Aprender y mejorar continuamente es algo que me motiva, y disfruto compartiendo lo que sé con otros.",
+		"3rd-paragraph": "A lo largo de mi carrera, he tenido la oportunidad de trabajar en diversos proyectos que me han permitido crecer y adquirir nuevas habilidades. Estoy comprometido con la mejora continua y siempre busco la manera de aportar valor a cada equipo con el que colaboro."
+	},
+	"Skills": {
+		"languages": "Lenguajes de programación",
+		"frameworks": "Frameworks",
+		"no-code": "No Code",
+		"design": "Diseño",
+		"others": "Otros"
+	},
+	"Projects": {
+		"project-1": "Mi Portafolio",
+		"description-1": "Mi más reciente portafolio personal y proyecto insignia. Una versión moderna, estética y mejorada de mi antiguo portafolio como muestra de mis mis habilidades como desarrollador y mis proyectos creados con las ultimas tecnologías.",
+		"project-2": "GuitarLA - TS",
+		"description-2": "Plataforma de comercio electrónico de guitarras que incluye un carrito de la compra. Los usuarios pueden navegar por una selección de guitarras, añadir artículos a su cesta y gestionar las cantidades y los precios dentro de la misma.",
+		"project-3": "Calculadora de Propinas y Consumo",
+		"description-3": "Una aplicación web que incluye un menú en el que se puede hacer un pedido y añadir una propina.",
+		"project-4": "Contador de Calorias",
+		"description-4": "Aplicación web en la que puedes llevar un registro de las calorías consumidas junto con las calorías quemadas a través de la actividad física."
+	}
+}

@@ -1,0 +1,60 @@
+---
+import { skills } from "../data/skills.js";
+import { projects } from "../data/projects.js";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import Link from "../components/icons/Link.astro";
+import SocialPill from "./SocialPill.astro";
+
+// Definir tipos explícitos para skillMap
+const skillMap: { [key: string]: string } = {};
+
+// Poblar skillMap con los nombres y colores de skills
+Object.values(skills).forEach((skillCategory) => {
+	skillCategory.forEach((skill) => {
+		skillMap[skill.name] = skill.color;
+	});
+});
+---
+
+{
+	projects.map(({ title, description, tag, image, github, link }) => (
+		<article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0 mb-9">
+			<div class="w-full md:w-1/2">
+				<div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:shadow-2xl lg:border lg:border-gray-800 border-gray-700 ">
+					<img
+						class="object-cover object-top w-full h-56 sm:h-full md:scale-110"
+						src={image}
+						alt={`Captura de pantalla del proyecto ${title}`}
+					/>
+				</div>
+			</div>
+
+			<div class="w-full md:w-1/2 md:max-w-lg">
+				<h2 class="text-2xl font-bold text-gray-100">{title}</h2>
+				<div class="flex flex-wrap mt-2">
+					<ul class="flex flex-row my-2 gap-x-2">
+						{tag.map((tag) => (
+							<li
+								style={`background-color: ${skillMap[tag] || "#000"}`}
+								class="py-1 px-2 text-xs rounded text-white text-center justify-center"
+							>
+								{tag}
+							</li>
+						))}
+					</ul>
+					<div class="mt-2 text-gray-400 text-pretty">
+						{description}
+					</div>
+					<footer class="flex items-end justify-start mt-4 gap-x-4">
+						<SocialPill href={github}>
+							<GitHubIcon class="size-4 md:size-6" /> Ver Código
+						</SocialPill>
+						<SocialPill href={link}>
+							<Link class="size-4 md:size-6" /> Preview
+						</SocialPill>
+					</footer>
+				</div>
+			</div>
+		</article>
+	))
+}
