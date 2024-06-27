@@ -14,6 +14,7 @@
 		"3rd-paragraph": "A lo largo de mi carrera, he tenido la oportunidad de trabajar en diversos proyectos que me han permitido crecer y adquirir nuevas habilidades. Estoy comprometido con la mejora continua y siempre busco la manera de aportar valor a cada equipo con el que colaboro."
 	},
 	"Skills": {
+		"title": "Habilidades",
 		"languages": "Lenguajes de programación",
 		"frameworks": "Frameworks",
 		"no-code": "No Code",
@@ -21,6 +22,7 @@
 		"others": "Otros"
 	},
 	"Projects": {
+		"title": "Proyectos",
 		"project-1": "Mi Portafolio",
 		"description-1": "Mi más reciente portafolio personal y proyecto insignia. Una versión moderna, estética y mejorada de mi antiguo portafolio como muestra de mis mis habilidades como desarrollador y mis proyectos creados con las ultimas tecnologías.",
 		"project-2": "GuitarLA - TS",
@@ -28,6 +30,7 @@
 		"project-3": "Calculadora de Propinas y Consumo",
 		"description-3": "Una aplicación web que incluye un menú en el que se puede hacer un pedido y añadir una propina.",
 		"project-4": "Contador de Calorias",
-		"description-4": "Aplicación web en la que puedes llevar un registro de las calorías consumidas junto con las calorías quemadas a través de la actividad física."
+		"description-4": "Aplicación web en la que puedes llevar un registro de las calorías consumidas junto con las calorías quemadas a través de la actividad física.",
+		"code-button": "Ver Código"
 	}
 }

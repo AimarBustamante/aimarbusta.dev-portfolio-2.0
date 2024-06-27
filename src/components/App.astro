@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import Skills from "../components/Skills.astro";
+import Projects from "../components/Projects.astro";
+import Tools from "../components/icons/Tools.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
+import ProfileCard from "../components/icons/ProfileCard.astro";
+import AboutMe from "../components/AboutMe.astro";
+import Hero from "../components/Hero.astro";
+
+import { getI18N } from "../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+---
+
+<Layout title={i18n.Layout.title} description={i18n.Layout.description}>
+	<main>
+		<SectionContainer id="inicio" class="pt-36 pb-20 md:py-36">
+			<Hero />
+		</SectionContainer>
+
+		<SectionContainer id="sobre-mi">
+			<h2 class="text-4xl font-semibold mb-4 flex gap-x-3 items-center">
+				<ProfileCard class="size-9" />
+				{i18n.AboutMe.title}
+			</h2>
+			<AboutMe />
+		</SectionContainer>
+
+		<SectionContainer id="habilidades" class="pb-16">
+			<h2 class="text-4xl font-semibold mb-4 flex gap-x-3 items-center">
+				<Tools class="size-9" />
+				{i18n.Skills.title}
+			</h2>
+			<Skills />
+		</SectionContainer>
+
+		<SectionContainer id="proyectos">
+			<h2 class="text-4xl font-semibold mb-4 flex gap-x-3 items-center">
+				<Briefcase class="size-9" />
+				{i18n.Projects.title}
+			</h2>
+			<Projects />
+		</SectionContainer>
+	</main>
+</Layout>
