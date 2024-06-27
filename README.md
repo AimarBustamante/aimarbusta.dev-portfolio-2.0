@@ -25,8 +25,6 @@ My latest personal portfolio and flagship project. It is a modern, aesthetic, an
 - **Hosting**: The project is hosted on **Netlify**, ensuring fast and reliable performance with seamless deployment workflows.
 - **Domain**: The custom domain was purchased from **Namecheap**, providing a professional and memorable web address.
 
-
-
 ## 🏗️ Project Structure
 The basic structure of an Astro project is as follows:
 
