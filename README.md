@@ -29,19 +29,34 @@ My latest personal portfolio and flagship project. It is a modern, aesthetic, an
 The basic structure of an Astro project is as follows:
 
 ```text
+├── dist/
 ├── public/
-│ └── favicon.ico
+│ └── favicon_io/
+│ │   └── favicons
+│ └── images
 ├── src/
 │ ├── components/
-│ │ └── YourComponents.astro
+│ │ └── icons/
+│ │ └── AllMyComponents.astro
+│ ├── data/
+│ │ └── navItems.ts
+│ │ └── projects.ts
+│ │ └── skills.ts
+│ ├── i18n/
+│ │ └── en.json
+│ │ └── es.json
+│ │ └── index.ts
 │ ├── layouts/
 │ │ └── Layout.astro
 │ ├── pages/
+│ │ └── en/
+│ │ │   └── contact.astro
+│ │ │   └── index.astro
+│ │ └── contact.astro
 │ │ └── index.astro
-│ └── styles/
-│ └── tailwind.css
+├── astro.config.mjs
 ├── package.json
-└── astro.config.mjs
+└── tailwind.config.mjs
 ```
 
 ## 📬 Contact Information
