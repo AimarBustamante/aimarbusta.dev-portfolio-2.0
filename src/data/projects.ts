@@ -9,7 +9,7 @@ export const projects: {
 	{
 		title: "Mi Portafolio",
 		description:
-			"Mi más reciente portafolio personal y proyecto insignia. Una versión moderna, estética y mejorada de mi antiguo portafolio como muestra de mis mis habilidades como desarrollador y mis proyectos creados con las ultimas tecnologías.",
+			"Mi más reciente portafolio personal y proyecto insignia. Una versión moderna, estética y mejorada de mi antiguo portafolio como muestra de mis habilidades como desarrollador y mis proyectos creados con las últimas tecnologías.",
 		github: "https://github.com/AimarBustamante/My-portfolio",
 		link: "https://aimarbusta.netlify.app/",
 		image: "/images/projects/aimarbusta.dev-mockup-2.0.webp",
