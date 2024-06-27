@@ -17,6 +17,15 @@ My latest personal portfolio and flagship project. It is a modern, aesthetic, an
 - **Multilingual**: The site is available in both English and Spanish, utilizing the i18n library for seamless language switching.
 - **Custom Domain**: Hosted on a personalized domain for a professional web presence.
 
+## 🌐 Hosting and Domain
+
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+![Namecheap](https://img.shields.io/badge/Namecheap-DE3723?style=for-the-badge&logo=namecheap&logoColor=white)
+
+- **Hosting**: The project is hosted on **Netlify**, ensuring fast and reliable performance with seamless deployment workflows.
+- **Domain**: The custom domain was purchased from **Namecheap**, providing a professional and memorable web address.
+
+
 
 ## 🏗️ Project Structure
 The basic structure of an Astro project is as follows:
