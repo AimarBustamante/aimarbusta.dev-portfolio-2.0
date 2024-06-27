@@ -32,5 +32,13 @@
 		"project-4": "Contador de Calorias",
 		"description-4": "Aplicación web en la que puedes llevar un registro de las calorías consumidas junto con las calorías quemadas a través de la actividad física.",
 		"code-button": "Ver Código"
+	},
+	"Footer": {
+		"copyrigit": "Todos los derechos reservados.",
+		"home": "Inicio",
+		"about-me": "Sobre Mi",
+		"skills": "Habilidades",
+		"projects": "Proyectos",
+		"contact": "Contacto"
 	}
 }

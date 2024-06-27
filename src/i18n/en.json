@@ -15,7 +15,7 @@
 	},
 	"Skills": {
 		"title": "Skills",
-		"languages": "Programming Languages",
+		"languages": "Languages",
 		"frameworks": "Frameworks",
 		"no-code": "No Code",
 		"design": "Design",
@@ -32,5 +32,13 @@
 		"project-4": "Calorie Counter",
 		"description-4": "A web application where you can track the calories consumed along with the calories burned through physical activity.",
 		"code-button": "Code"
+	},
+	"Footer": {
+		"copyrigit": "All rights reserved.",
+		"home": "Home",
+		"about-me": "About Me",
+		"skills": "Skills",
+		"projects": "Projects",
+		"contact": "Contact"
 	}
 }

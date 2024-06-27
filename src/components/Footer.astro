@@ -6,6 +6,10 @@ import InstagramIcon from "../components/icons/InstagramIcon.astro";
 import WhatsAppIcon from "../components/icons/WhatsAppIcon.astro";
 
 const currentYear = new Date().getFullYear();
+
+import { getI18N } from "../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <footer
@@ -16,41 +20,40 @@ const currentYear = new Date().getFullYear();
 	>
 		<span class="text-sm sm:text-center text-gray-400"
 			>© {currentYear}
-			<p class="inline-block">aimarbusta</p>. Todos los derechos
-			reservados.
+			<p class="inline-block">Aimar Bustamante</p>. {i18n.Footer.copyrigit}
 		</span>
 		<ul
 			class="flex flex-wrap items-center mt-3 text-sm font-medium text-white/90 sm:mt-0"
 		>
 			<li>
 				<a href="/#inicio" class="hover:underline me-4 md:me-6"
-					>Inicio</a
+					>{i18n.Footer.home}</a
 				>
 			</li>
 			<li>
 				<a href="#sobre-mi" class="hover:underline me-4 md:me-6"
-					>Sobre Mi</a
+					>{i18n.Footer["about-me"]}</a
 				>
 			</li>
 			<li>
 				<a href="#habilidades" class="hover:underline me-4 md:me-6"
-					>Habilidades</a
+					>{i18n.Footer.skills}</a
 				>
 			</li>
 			<li>
 				<a href="#proyectos" class="hover:underline me-4 md:me-6"
-					>Proyectos</a
+					>{i18n.Footer.projects}</a
 				>
 			</li>
 			<li>
-				<a href="/contact" class="hover:underline">Contacto</a>
+				<a href="/contact" class="hover:underline">{i18n.Footer.contact}</a>
 			</li>
 		</ul>
 	</div>
 
 	<hr class="my-6 sm:mx-auto border-gray-600 lg:my-8" />
 
-	<div class="flex items-center justify-end gap-6">
+	<div class="flex items-center justify-between mx-10 gap-6 md:justify-end md:mx-0">
 		<a
 			href="https://www.linkedin.com/in/aimarbustamante/"
 			target="_blank"
