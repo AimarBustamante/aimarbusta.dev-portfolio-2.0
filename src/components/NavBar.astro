@@ -11,6 +11,7 @@ interface I18N {
 }
 
 const i18nTyped = i18n as I18N;
+const isSpanish = currentLocale === "es";
 ---
 
 <header
@@ -24,7 +25,7 @@ const i18nTyped = i18n as I18N;
 				<a
 					class="relative block p-3 transition hover:text-yellow-400"
 					aria-label={link.label}
-					href={`/${currentLocale}/#${link.url}`}
+					href={isSpanish ? link.url : `/en${link.url}`}
 				>
 					{i18nTyped.NavBar[link.label]}
 				</a>
@@ -43,7 +44,7 @@ const i18nTyped = i18n as I18N;
 				if (entry.isIntersecting) {
 					navItems.forEach((item) => {
 						if (
-							item.getAttribute("aria-label") == entry.target.id
+							item.getAttribute("aria-label") === entry.target.id
 						) {
 							item.classList.add("text-yellow-500");
 						} else {
