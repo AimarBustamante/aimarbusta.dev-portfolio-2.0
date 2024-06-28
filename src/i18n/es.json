@@ -3,6 +3,12 @@
 		"title": "Aimar Bustamante - Desarrollador Web Frontend con 2 años de experiencia",
 		"description": "Bienvenido a mi portafolio. Soy Aimar, un desarrollador frontend con 2 años de experiencia creando soluciones web innovadoras y funcionales. Desde Panamá 🇵🇦, me especializo en las últimas tecnologías de desarrollo web. Explora mis proyectos y descubre cómo puedo ayudarte a llevar tu negocio al siguiente nivel."
 	},
+	"NavBar":{
+		"home": "Inicio",
+		"about-me": "Sobre Mi",
+		"skills": "Habilidades",
+		"projects": "Proyectos"
+	},
 	"Hero": {
 		"title": "¡Hola👋🏻! Soy Aimar",
 		"subtitle": "Con <span class=\"text-blue-500/90 font-medium\">2 años de experiencia</span> como desarrollador frontend, apasionado por crear <span class=\"text-yellow-500/90 font-medium\">soluciones innovadoras y funcionales</span>. Desde <span class=\"text-red-500/90 font-medium\">Panamá</span> 🇵🇦, llevando mi talento <span class=\"text-green-500/90 font-medium\">al mundo</span>."

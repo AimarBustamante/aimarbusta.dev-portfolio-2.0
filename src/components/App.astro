@@ -16,11 +16,11 @@ const i18n = getI18N({ currentLocale });
 
 <Layout title={i18n.Layout.title} description={i18n.Layout.description}>
 	<main>
-		<SectionContainer id="inicio" class="pt-36 pb-20 md:py-36">
+		<SectionContainer id="home" class="pt-36 pb-20 md:py-36">
 			<Hero />
 		</SectionContainer>
 
-		<SectionContainer id="sobre-mi">
+		<SectionContainer id="about-me">
 			<h2 class="text-4xl font-semibold mb-4 flex gap-x-3 items-center">
 				<ProfileCard class="size-9" />
 				{i18n.AboutMe.title}
@@ -28,7 +28,7 @@ const i18n = getI18N({ currentLocale });
 			<AboutMe />
 		</SectionContainer>
 
-		<SectionContainer id="habilidades" class="pb-16">
+		<SectionContainer id="skills" class="pb-16">
 			<h2 class="text-4xl font-semibold mb-4 flex gap-x-3 items-center">
 				<Tools class="size-9" />
 				{i18n.Skills.title}
@@ -36,7 +36,7 @@ const i18n = getI18N({ currentLocale });
 			<Skills />
 		</SectionContainer>
 
-		<SectionContainer id="proyectos">
+		<SectionContainer id="projects">
 			<h2 class="text-4xl font-semibold mb-4 flex gap-x-3 items-center">
 				<Briefcase class="size-9" />
 				{i18n.Projects.title}

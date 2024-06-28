@@ -1,22 +1,22 @@
 export const navItems = [
 	{
 		title: "Inicio",
-		label: "inicio",
-		url: "/#inicio",
+		label: "home",
+		url: "/#home", // No hay necesidad de modificar las URLs
 	},
 	{
 		title: "Sobre mí",
-		label: "sobre-mi",
-		url: "/#sobre-mi",
-	},	
+		label: "about-me",
+		url: "/#about-me",
+	},
 	{
 		title: "Habilidades",
-		label: "habilidades",
-		url: "/#habilidades",
+		label: "skills",
+		url: "/#skills",
 	},
 	{
 		title: "Proyectos",
-		label: "proyectos",
-		url: "/#proyectos",
+		label: "projects",
+		url: "/#projects",
 	},
 ];

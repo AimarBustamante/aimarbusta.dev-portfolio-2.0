@@ -3,6 +3,12 @@
 		"title": "Aimar Bustamante - Frontend Web Developer with 2 Years of Experience",
 		"description": "Welcome to my portfolio. I'm Aimar, a frontend developer with 2 years of experience creating innovative and functional web solutions. From Panama 🇵🇦, I specialize in the latest web development technologies. Explore my projects and discover how I can help take your business to the next level."
 	},
+	"NavBar":{
+		"home": "Home",
+		"about-me": "About Me",
+		"skills": "Skills",
+		"projects": "Projects"
+	},
 	"Hero": {
 		"title": "Hi👋🏻! I'm Aimar",
 		"subtitle": "With <span class=\"text-blue-500/90 font-medium\">2 years of experience</span> as a frontend developer, passionate about creating <span class=\"text-yellow-500/90 font-medium\">innovative and functional solutions</span>. From <span class=\"text-red-500/90 font-medium\">Panama</span> 🇵🇦, bringing my talent <span class=\"text-green-500/90 font-medium\">to the world</span>."

@@ -1,5 +1,16 @@
 ---
 import { navItems } from "../data/navItems";
+import { getI18N } from "../i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+// Tipado explícito para las traducciones
+interface I18N {
+	NavBar: Record<string, string>;
+}
+
+const i18nTyped = i18n as I18N;
 ---
 
 <header
@@ -13,9 +24,9 @@ import { navItems } from "../data/navItems";
 				<a
 					class="relative block p-3 transition hover:text-yellow-400"
 					aria-label={link.label}
-					href={link.url}
+					href={`/${currentLocale}/#${link.url}`}
 				>
-					{link.title}
+					{i18nTyped.NavBar[link.label]}
 				</a>
 			))
 		}
@@ -27,8 +38,8 @@ import { navItems } from "../data/navItems";
 		const sections = document.querySelectorAll("section");
 		const navItems = document.querySelectorAll("header nav a");
 
-		const callback = (entries: any[]) => {
-			entries.forEach((entry) => {
+		const callback = (entries: IntersectionObserverEntry[]) => {
+			entries.forEach((entry: IntersectionObserverEntry) => {
 				if (entry.isIntersecting) {
 					navItems.forEach((item) => {
 						if (
