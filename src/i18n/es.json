@@ -46,5 +46,24 @@
 		"skills": "Habilidades",
 		"projects": "Proyectos",
 		"contact": "Contacto"
+	},
+	"Contact": {
+		"page-title": "Contacto | Aimar Bustamante - Desarrollador Web Frontend con 2 años de experiencia",
+		"page-description": "Ponte en contacto con Aimar, desarrollador frontend. Ya seas un reclutador o un cliente potencial, utiliza el formulario para enviarme un correo.",
+		"title": "Contacto",
+		"name-label": "Nombre",
+		"name-placeholder": "Ej: Jhon Doe",
+		"name-error": "Por favor, ingresa tu nombre",
+		"name-success": "<span class=\"font-medium\">Genial!</span> Nombre válido",
+		"email-label": "Correo",
+		"email-placeholder": "Ej: jhondoe@email.com",
+		"email-error": "Por favor ingresa un correo válido",
+		"email-success": "<span class=\"font-medium\">Genial!</span> Correo válido",
+		"message-label": "Mensaje",
+		"message-placeholder": "Ej: Hola mundo",
+		"message-error": "Por favor, ingresa tu mensaje",
+		"message-success": "<span class=\"font-medium\">Genial!</span> Mensaje válido",
+		"submitt-button": "Enviar",
+		"form-success": "Mensaje enviado con exito"
 	}
 }

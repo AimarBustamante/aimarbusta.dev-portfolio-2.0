@@ -46,5 +46,24 @@
 		"skills": "Skills",
 		"projects": "Projects",
 		"contact": "Contact"
+	},
+	"Contact": {
+		"page-title": "Contact | Aimar Bustamante - Frontend Web Developer with 2 years of experience",
+		"page-description": "Contact Aimar, frontend developer. Whether you are a recruiter or a potential client, use the form below to send me an email.",
+		"title": "Contact",
+		"name-label": "Name",
+		"name-placeholder": "Ex: Jhon Doe",
+		"name-error": "Please, enter your name",
+		"name-success": "<span class=\"font-medium\">Great!</span> Valid name",
+		"email-label": "Email",
+		"email-placeholder": "Ex: jhondoe@email.com",
+		"email-error": "Please, enter a valid email",
+		"email-success": "<span class=\"font-medium\">Great!</span> Valid email",
+		"message-label": "Message",
+		"message-placeholder": "Ex: Hello world",
+		"message-error": "Please, enter your message",
+		"message-success": "<span class=\"font-medium\">Great!</span> Valid message",
+		"submitt-button": "Send",
+		"form-success": "Message sent succesfully"
 	}
 }
