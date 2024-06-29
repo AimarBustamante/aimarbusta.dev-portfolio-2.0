@@ -1,0 +1,36 @@
+---
+import LanguageIcon from "./icons/LanguageIcon.astro";
+import { getI18N } from "../i18n";
+
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
+
+const newLocale = currentLocale === "en" ? "es" : "en";
+const newPath =
+	currentLocale === "en"
+		? Astro.url.pathname.replace("/en", "")
+		: `/en${Astro.url.pathname}`;
+---
+
+<button
+	type="button"
+	aria-label={currentLocale === "en"
+		? "Switch to Spanish"
+		: "Switch to English"}
+	id="language-toggler"
+>
+	<LanguageIcon />
+</button>
+
+<script is:inline>
+	document
+		.getElementById("language-toggler")
+		.addEventListener("click", function (event) {
+			event.preventDefault();
+			const currentPath = window.location.pathname;
+			const newPath = currentPath.startsWith("/en")
+				? currentPath.replace("/en", "")
+				: `/en${currentPath}`;
+			window.location.href = newPath;
+		});
+</script>
