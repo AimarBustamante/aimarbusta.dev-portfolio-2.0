@@ -84,4 +84,13 @@ function getTranslation(key: string): string {
 			)
 		)
 	}
+
+	<h3 class="text-2xl font-bold text-gray-100">
+		{i18n.Projects["contact-button"]}
+	</h3>
+	<button
+		class="w-32 bg-blue-600 text-white text-sm font-medium py-2.5 rounded-lg focus:ring-4 focus:ring-blue-500 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700"
+		onclick={`window.location.href='${currentLocale === "en" ? "/en/contact/" : "/contact/"}'`}
+		>{currentLocale === 'en' ? 'Contact Me' : 'Contáctame'}</button
+	>
 </div>

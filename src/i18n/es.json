@@ -37,7 +37,8 @@
 		"description-3": "Una aplicación web que incluye un menú en el que se puede hacer un pedido y añadir una propina.",
 		"project-4": "Contador de Calorias",
 		"description-4": "Aplicación web en la que puedes llevar un registro de las calorías consumidas junto con las calorías quemadas a través de la actividad física.",
-		"code-button": "Ver Código"
+		"code-button": "Ver Código",
+		"contact-button": "¿Deseas cotizar mis servicios?"
 	},
 	"Footer": {
 		"copyrigit": "Todos los derechos reservados.",
@@ -50,6 +51,7 @@
 	"Contact": {
 		"page-title": "Contacto | Aimar Bustamante - Desarrollador Web Frontend con 2 años de experiencia",
 		"page-description": "Ponte en contacto con Aimar, desarrollador frontend. Ya seas un reclutador o un cliente potencial, utiliza el formulario para enviarme un correo.",
+		"back-button": "Volver",
 		"title": "Contacto",
 		"name-label": "Nombre",
 		"name-placeholder": "Ej: Jhon Doe",
@@ -63,7 +65,7 @@
 		"message-placeholder": "Ej: Hola mundo",
 		"message-error": "Por favor, ingresa tu mensaje",
 		"message-success": "<span class=\"font-medium\">Genial!</span> Mensaje válido",
-		"submitt-button": "Enviar",
+		"submit-button": "Enviar",
 		"form-success": "Mensaje enviado con exito"
 	}
 }

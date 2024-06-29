@@ -3,8 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 
 import { getI18N } from "../i18n";
+import BackIcon from "./icons/BackIcon.astro";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
+
+const homeUrl = currentLocale === "en" ? "/en/" : "/";
 ---
 
 <Layout
@@ -14,9 +17,21 @@ const i18n = getI18N({ currentLocale });
 	showFooter={false}
 >
 	<main>
-		<SectionContainer class="py-40">
+		<SectionContainer class="py-32">
+
+			<!-- Botón de regreso -->
+			<button
+				type="button"
+				class="flex gap-1 items-center justify-center text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-6 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+				onclick={`window.location.href='${homeUrl}'`}
+			>	
+			<BackIcon/>
+				{i18n.Contact["back-button"]}
+			</button>
+
 			<h2 class="text-4xl font-semibold mb-6">{i18n.Contact.title}</h2>
 
+			<!-- Resto del contenido del formulario -->
 			<form class="w-full mx-auto" id="contactForm" novalidate>
 				<!-- Nombre -->
 				<div class="mb-5">
@@ -39,9 +54,8 @@ const i18n = getI18N({ currentLocale });
 					<p
 						id="name-success"
 						class="hidden mt-2 text-sm text-green-500"
-					>
-						{i18n.Contact["name-success"]}
-					</p>
+						set:html={i18n.Contact["name-success"]}
+					/>
 				</div>
 
 				<!-- Correo -->
@@ -69,9 +83,8 @@ const i18n = getI18N({ currentLocale });
 					<p
 						id="email-success"
 						class="hidden mt-2 text-sm text-green-500"
-					>
-						{i18n.Contact["email-success"]}
-					</p>
+						set:html={i18n.Contact["email-success"]}
+					/>
 				</div>
 
 				<!-- Mensaje -->
@@ -97,182 +110,52 @@ const i18n = getI18N({ currentLocale });
 					<p
 						id="message-success"
 						class="hidden mt-2 text-sm text-green-600 dark:text-green-500"
-					>
-						{i18n.Contact["message-success"]}
-					</p>
+						set:html={i18n.Contact["message-success"]}
+					/>
 				</div>
 
 				<!-- Botón de envío -->
 				<button
 					type="submit"
 					class="mt-4 w-32 bg-blue-600 text-white text-sm font-medium py-2.5 rounded-lg focus:ring-4 focus:ring-blue-500 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700"
-					>{i18n.Contact["submitt-button"]}</button
 				>
+					{i18n.Contact["submit-button"]}
+				</button>
 			</form>
 
-			<script is:inline type="module">
+			<!-- Script para validación del formulario -->
+			<script is:inline>
 				import { getI18N } from "../i18n";
 				const { currentLocale } = Astro;
 				const i18n = getI18N({ currentLocale });
 
 				document.addEventListener("DOMContentLoaded", () => {
 					const contactForm = document.getElementById("contactForm");
-					const name = document.getElementById("name");
-					const email = document.getElementById("email");
-					const message = document.getElementById("message");
-
-					const validateName = () => {
-						if (!name.value.trim()) {
-							document
-								.getElementById("name-error")
-								?.classList.remove("hidden");
-							document
-								.getElementById("name-success")
-								?.classList.add("hidden");
-							name.classList.add("border-red-500", "bg-red-50");
-							name.classList.remove(
-								"border-green-500",
-								"bg-green-50"
-							);
-						} else {
-							document
-								.getElementById("name-error")
-								?.classList.add("hidden");
-							document
-								.getElementById("name-success")
-								?.classList.remove("hidden");
-							name.classList.add(
-								"border-green-500",
-								"bg-green-50"
-							);
-							name.classList.remove(
-								"border-red-500",
-								"bg-red-50"
-							);
-						}
-					};
-
-					const validateEmail = () => {
-						const emailPattern =
-							/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-						if (
-							!email.value.trim() ||
-							!emailPattern.test(email.value)
-						) {
-							document
-								.getElementById("email-error")
-								?.classList.remove("hidden");
-							document
-								.getElementById("email-success")
-								?.classList.add("hidden");
-							email.classList.add("border-red-500", "bg-red-50");
-							email.classList.remove(
-								"border-green-500",
-								"bg-green-50"
-							);
-						} else {
-							document
-								.getElementById("email-error")
-								?.classList.add("hidden");
-							document
-								.getElementById("email-success")
-								?.classList.remove("hidden");
-							email.classList.add(
-								"border-green-500",
-								"bg-green-50"
-							);
-							email.classList.remove(
-								"border-red-500",
-								"bg-red-50"
-							);
-						}
-					};
-
-					const validateMessage = () => {
-						if (!message.value.trim()) {
-							document
-								.getElementById("message-error")
-								?.classList.remove("hidden");
-							document
-								.getElementById("message-success")
-								?.classList.add("hidden");
-							message.classList.add(
-								"border-red-500",
-								"bg-red-50"
-							);
-							message.classList.remove(
-								"border-green-500",
-								"bg-green-50"
-							);
-						} else {
-							document
-								.getElementById("message-error")
-								?.classList.add("hidden");
-							document
-								.getElementById("message-success")
-								?.classList.remove("hidden");
-							message.classList.add(
-								"border-green-500",
-								"bg-green-50"
-							);
-							message.classList.remove(
-								"border-red-500",
-								"bg-red-50"
-							);
-						}
-					};
-
-					name.addEventListener("input", validateName);
-					email.addEventListener("input", validateEmail);
-					message.addEventListener("input", validateMessage);
-
 					if (contactForm) {
+						const name = document.getElementById("name");
+						const email = document.getElementById("email");
+						const message = document.getElementById("message");
+
+						name.addEventListener("input", () =>
+							validateInput(name, "name")
+						);
+						email.addEventListener("input", () =>
+							validateInput(email, "email")
+						);
+						message.addEventListener("input", () =>
+							validateInput(message, "message")
+						);
+
 						contactForm.addEventListener(
 							"submit",
 							function (event) {
 								event.preventDefault();
-
 								let hasError = false;
 
-								// Clear previous errors and successes
-								document
-									.querySelectorAll(
-										".text-red-600, .text-green-600"
-									)
-									.forEach((el) =>
-										el.classList.add("hidden")
-									);
-								document
-									.querySelectorAll("input, textarea")
-									.forEach((el) =>
-										el.classList.remove(
-											"border-red-500",
-											"bg-red-50",
-											"border-green-500",
-											"bg-green-50"
-										)
-									);
-
-								// Validate Name
-								validateName();
-								if (!name.value.trim()) {
-									hasError = true;
-								}
-
-								// Validate Email
-								validateEmail();
-								if (
-									!email.value.trim() ||
-									!emailPattern.test(email.value)
-								) {
-									hasError = true;
-								}
-
-								// Validate Message
-								validateMessage();
-								if (!message.value.trim()) {
-									hasError = true;
-								}
+								// Validar todos los campos al enviar
+								hasError |= !validateInput(name, "name");
+								hasError |= !validateInput(email, "email");
+								hasError |= !validateInput(message, "message");
 
 								if (!hasError) {
 									alert(i18n.Contact["form-success"]);
@@ -288,6 +171,47 @@ const i18n = getI18N({ currentLocale });
 								}
 							}
 						);
+					}
+
+					function validateInput(input, type) {
+						let isValid = false;
+						if (type === "name") {
+							isValid = input.value.trim() !== "";
+						} else if (type === "email") {
+							const emailPattern =
+								/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+							isValid = emailPattern.test(input.value);
+						} else if (type === "message") {
+							isValid = input.value.trim() !== "";
+						}
+
+						const errorEl = document.getElementById(
+							`${type}-error`
+						);
+						const successEl = document.getElementById(
+							`${type}-success`
+						);
+						if (isValid) {
+							input.classList.remove(
+								"border-red-500",
+								"bg-red-50"
+							);
+							input.classList.add(
+								"border-green-500",
+								"bg-green-50"
+							);
+							errorEl.classList.add("hidden");
+							successEl.classList.remove("hidden");
+						} else {
+							input.classList.add("border-red-500", "bg-red-50");
+							input.classList.remove(
+								"border-green-500",
+								"bg-green-50"
+							);
+							errorEl.classList.remove("hidden");
+							successEl.classList.add("hidden");
+						}
+						return isValid;
 					}
 				});
 			</script>
