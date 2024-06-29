@@ -28,9 +28,15 @@ const newPath =
 		.addEventListener("click", function (event) {
 			event.preventDefault();
 			const currentPath = window.location.pathname;
-			const newPath = currentPath.startsWith("/en")
+			const currentHash = window.location.hash; // Obtiene el hash actual
+			let newPath = currentPath.startsWith("/en")
 				? currentPath.replace("/en", "")
 				: `/en${currentPath}`;
-			window.location.href = newPath;
+
+			if (newPath === "") {
+				newPath = "/"; // Asegurarse de que la ruta raíz sea correcta en español
+			}
+
+			window.location.href = newPath + currentHash; // Añade el hash a la nueva ruta
 		});
 </script>
