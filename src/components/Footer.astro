@@ -4,12 +4,14 @@ import GitHubIcon from "../components/icons/GitHub.astro";
 import MailIcon from "../components/icons/Mail.astro";
 import InstagramIcon from "../components/icons/InstagramIcon.astro";
 import WhatsAppIcon from "../components/icons/WhatsAppIcon.astro";
+import { getI18N } from "../i18n";
 
 const currentYear = new Date().getFullYear();
 
-import { getI18N } from "../i18n";
 const { currentLocale } = Astro;
 const i18n = getI18N({ currentLocale });
+
+const contactUrl = currentLocale === "en" ? "/en/contact/" : "/contact/";
 ---
 
 <footer
@@ -19,41 +21,39 @@ const i18n = getI18N({ currentLocale });
 		class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
 	>
 		<span class="text-sm sm:text-center text-gray-400"
-			>© {currentYear}
-			<p class="inline-block">Aimar Bustamante</p>. {i18n.Footer.copyrigit}
-		</span>
+			>© {currentYear} Aimar Bustamante. {i18n.Footer.copyrigit}</span
+		>
 		<ul
 			class="flex flex-wrap items-center mt-3 text-sm font-medium text-white/90 sm:mt-0"
 		>
 			<li>
 				<a href="/#home" class="hover:underline me-4 md:me-6"
-					>{i18n.Footer.home}</a
-				>
+					>{i18n.Footer.home}</a>
 			</li>
 			<li>
 				<a href="#about-me" class="hover:underline me-4 md:me-6"
-					>{i18n.Footer["about-me"]}</a
-				>
+					>{i18n.Footer["about-me"]}</a>
 			</li>
 			<li>
 				<a href="#skills" class="hover:underline me-4 md:me-6"
-					>{i18n.Footer.skills}</a
-				>
+					>{i18n.Footer.skills}</a>
 			</li>
 			<li>
 				<a href="#projects" class="hover:underline me-4 md:me-6"
-					>{i18n.Footer.projects}</a
-				>
+					>{i18n.Footer.projects}</a>
 			</li>
 			<li>
-				<a href="/contact" class="hover:underline">{i18n.Footer.contact}</a>
+				<a href={contactUrl} class="hover:underline"
+					>{i18n.Footer.contact}</a>
 			</li>
 		</ul>
 	</div>
 
 	<hr class="my-6 sm:mx-auto border-gray-600 lg:my-8" />
 
-	<div class="flex items-center justify-between mx-10 gap-6 md:justify-end md:mx-0">
+	<div
+		class="flex items-center justify-between mx-10 gap-6 md:justify-end md:mx-0"
+	>
 		<a
 			href="https://www.linkedin.com/in/aimarbustamante/"
 			target="_blank"
@@ -62,7 +62,6 @@ const i18n = getI18N({ currentLocale });
 		>
 			<LinkedInIcon class="size-6" />
 		</a>
-
 		<a
 			href="https://github.com/AimarBustamante"
 			target="_blank"
@@ -71,7 +70,6 @@ const i18n = getI18N({ currentLocale });
 		>
 			<GitHubIcon class="size-6" />
 		</a>
-
 		<a
 			href="mailto:aimarbustamante379@hotmail.com"
 			target="_blank"
@@ -80,7 +78,6 @@ const i18n = getI18N({ currentLocale });
 		>
 			<MailIcon class="size-6" />
 		</a>
-
 		<a
 			href="https://www.instagram.com/aimarbusta.dev/"
 			target="_blank"
@@ -89,7 +86,6 @@ const i18n = getI18N({ currentLocale });
 		>
 			<InstagramIcon class="size-6" />
 		</a>
-
 		<a
 			href="https://wa.me/50765167602"
 			target="_blank"
