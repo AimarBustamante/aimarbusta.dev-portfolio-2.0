@@ -6,9 +6,11 @@ import Footer from "../components/Footer.astro";
 interface Props {
 	title: string;
 	description: string;
+	showNavbar?: boolean;
+	showFooter?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, showNavbar = true, showFooter = true } = Astro.props;
 ---
 
 <!doctype html>
@@ -82,9 +84,9 @@ const { title, description } = Astro.props;
 		/>
 	</head>
 	<body>
-		<NavBar />
+		{showNavbar && <NavBar />}
 		<slot />
-		<Footer />
+		{showFooter && <Footer />}
 	</body>
 </html>
 <style is:global>
