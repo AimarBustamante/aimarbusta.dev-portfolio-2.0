@@ -28,10 +28,17 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 				{i18n.Contact["back-button"]}
 			</button>
 
-			<h2 class="text-4xl font-semibold mb-6 text-gray-100">{i18n.Contact.title}</h2>
+			<h2 class="text-4xl font-semibold mb-6 text-gray-100">
+				{i18n.Contact.title}
+			</h2>
 
 			<!-- Resto del contenido del formulario -->
-			<form class="w-full mx-auto" id="contactForm" novalidate>
+			<form
+				class="w-full mx-auto"
+				id="contactForm"
+				novalidate
+				data-netlify="true"
+			>
 				<!-- Nombre -->
 				<div class="mb-5">
 					<label
@@ -42,6 +49,7 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 					<input
 						type="text"
 						id="name"
+						name="name"
 						class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 						placeholder={i18n.Contact["name-placeholder"]}
 						required
@@ -67,6 +75,7 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 					<input
 						type="email"
 						id="email"
+						name="email"
 						aria-describedby="helper-text-explanation"
 						class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 						placeholder={i18n.Contact["email-placeholder"]}
@@ -95,6 +104,7 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 					>
 					<textarea
 						id="message"
+						name="message"
 						rows="4"
 						class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 						placeholder={i18n.Contact["message-placeholder"]}
