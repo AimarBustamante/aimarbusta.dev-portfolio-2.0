@@ -11,13 +11,17 @@ interface Props {
 }
 
 const { title, description, showNavbar = true, showFooter = true } = Astro.props;
+
+import { getI18N } from "../i18n";
+const { currentLocale } = Astro;
+const i18n = getI18N({ currentLocale });
 ---
 
 <!doctype html>
-<html lang=es>
+<html lang={i18n.Layout.title}>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content={description} />
+		<meta name="description" content={i18n.Layout.description} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
