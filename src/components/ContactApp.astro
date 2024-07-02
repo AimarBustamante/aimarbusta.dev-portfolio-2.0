@@ -56,15 +56,16 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 						class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 						placeholder={i18n.Contact["name-placeholder"]}
 					/>
-					<p id="name-error" class="hidden mt-2 text-sm text-red-500">
-						{i18n.Contact["name-error"]}
-					</p>
+					<p
+						id="name-error"
+						class="hidden mt-2 text-sm text-red-500"
+						set:html={i18n.Contact["name-error"]}
+					/>
 					<p
 						id="name-success"
 						class="hidden mt-2 text-sm text-green-500"
-					>
-						{i18n.Contact["name-success"]}
-					</p>
+						set:html={i18n.Contact["name-success"]}
+					/>
 				</div>
 
 				<!-- Correo -->
@@ -86,15 +87,13 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 					<p
 						id="email-error"
 						class="hidden mt-2 text-sm text-red-500"
-					>
-						{i18n.Contact["email-error"]}
-					</p>
+						set:html={i18n.Contact["email-error"]}
+					/>
 					<p
 						id="email-success"
 						class="hidden mt-2 text-sm text-green-500"
-					>
-						{i18n.Contact["email-success"]}
-					</p>
+						set:html={i18n.Contact["email-success"]}
+					/>
 				</div>
 
 				<!-- Mensaje -->
@@ -115,15 +114,13 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 					<p
 						id="message-error"
 						class="hidden mt-2 text-sm text-red-600 dark:text-red-500"
-					>
-						{i18n.Contact["message-error"]}
-					</p>
+						set:html={i18n.Contact["message-error"]}
+					/>
 					<p
 						id="message-success"
 						class="hidden mt-2 text-sm text-green-600 dark:text-green-500"
-					>
-						{i18n.Contact["message-success"]}
-					</p>
+						set:html={i18n.Contact["message-success"]}
+					/>
 				</div>
 
 				<!-- Botón de envío -->
