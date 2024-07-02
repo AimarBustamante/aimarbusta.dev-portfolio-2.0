@@ -3,7 +3,7 @@
 ![mockup-browser](public/images/mockup-for-readme.png)
 
 ## 📖 Project Description
-My latest personal portfolio and flagship project. It is a modern, aesthetic, and improved version of my old portfolio, showcasing my skills as a developer and my projects created with the latest technologies.
+My latest personal portfolio and flagship project. A representation of my latest personal showcase, highlighting my growth and capabilities as a developer. This modern and refined version of my previous portfolio demonstrates my proficiency with contemporary web technologies and my dedication to creating visually appealing and highly functional web applications.
 
 ## 🛠️ Technologies Used
 ![Astro](https://img.shields.io/badge/Astro-0C1222?style=for-the-badge&logo=astro&logoColor=FDFDFE) 
