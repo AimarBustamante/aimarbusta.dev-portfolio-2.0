@@ -1,6 +1,6 @@
 # 💼 My Portfolio 2.0
 
-![mockup-browser](public\images\mockup-for-readme.png)
+![mockup-browser](public/images/mockup-for-readme.png)
 
 ## 📖 Project Description
 My latest personal portfolio and flagship project. It is a modern, aesthetic, and improved version of my old portfolio, showcasing my skills as a developer and my projects created with the latest technologies.
