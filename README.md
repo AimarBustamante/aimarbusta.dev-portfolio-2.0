@@ -25,6 +25,14 @@ My latest personal portfolio and flagship project. It is a modern, aesthetic, an
 - **Hosting**: The project is hosted on **Netlify**, ensuring fast and reliable performance with seamless deployment workflows.
 - **Domain**: The custom domain was purchased from **Namecheap**, providing a professional and memorable web address.
 
+## 📈 Performance Report
+
+Below is the performance report generated using [Lighthouse](https://developers.google.com/web/tools/lighthouse):
+
+![Lighthouse_Performance_Report](public/images/lighthouse-metrics.png)
+
+This report evaluates the performance, accessibility, best practices, and SEO of the website, ensuring that it meets the highest standards for modern web development.
+
 ## 🏗️ Project Structure
 The basic structure of an Astro project is as follows:
 
