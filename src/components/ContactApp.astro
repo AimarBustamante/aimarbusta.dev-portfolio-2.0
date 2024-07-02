@@ -36,6 +36,7 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 			<form
 				class="w-full mx-auto"
 				id="contactForm"
+				name="contactForm"
 				novalidate
 				data-netlify="true"
 			>
@@ -163,7 +164,6 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 								hasError |= !validateInput(message, "message");
 
 								if (!hasError) {
-									alert(i18n.Contact["form-success"]);
 									contactForm.reset();
 									document
 										.querySelectorAll("input, textarea")
