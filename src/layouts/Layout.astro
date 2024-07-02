@@ -10,7 +10,12 @@ interface Props {
 	showFooter?: boolean;
 }
 
-const { title, description, showNavbar = true, showFooter = true } = Astro.props;
+const {
+	title,
+	description,
+	showNavbar = true,
+	showFooter = true,
+} = Astro.props;
 
 import { getI18N } from "../i18n";
 const { currentLocale } = Astro;
@@ -28,9 +33,7 @@ const i18n = getI18N({ currentLocale });
 		<meta name="author" content="Aimar Bustamante" />
 		<meta name="copyright" content="Todos los derechos reservados" />
 		<meta name="robots" content="index, follow" />
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://metatags.io/" />
+		<!-- Open Graphk -->
 		<meta
 			property="og:title"
 			content="Aimar Bustamante - Desarrollador Web Frontend con 2 años de experiencia"
@@ -41,23 +44,24 @@ const i18n = getI18N({ currentLocale });
 		/>
 		<meta
 			property="og:image"
-			content="public\favicon_io\android-chrome-512x512.png"
+			content="https://github.com/AimarBustamante/aimarbusta.dev-portfolio-2.0/raw/main/public/images/projects/aimarbusta.dev-mockup-2.0.webp"
 		/>
-
+		<meta property="og:url" content="URL de tu portafolio" />
+		<meta property="og:type" content="website" />
 		<!-- Twitter -->
-		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://metatags.io/" />
+
+		<meta name="twitter:card" content="summary_large_image" />
 		<meta
-			property="twitter:title"
+			name="twitter:title"
 			content="Aimar Bustamante - Desarrollador Web Frontend con 2 años de experiencia"
 		/>
 		<meta
-			property="twitter:description"
+			name="twitter:description"
 			content="Bienvenido a mi portafolio. Soy Aimar, un desarrollador frontend con 2 años de experiencia creando soluciones web innovadoras y funcionales. Desde Panamá 🇵🇦, me especializo en HTML, CSS, JavaScript y las últimas tecnologías de desarrollo web. Explora mis proyectos y descubre cómo puedo ayudarte a llevar tu negocio al siguiente nivel."
 		/>
 		<meta
-			property="twitter:image"
-			content="public\favicon_io\android-chrome-512x512.png"
+			name="twitter:image"
+			content="https://github.com/AimarBustamante/aimarbusta.dev-portfolio-2.0/raw/main/public/images/projects/aimarbusta.dev-mockup-2.0.webp"
 		/>
 		<!-- FAVICON -->
 		<link
@@ -77,6 +81,7 @@ const i18n = getI18N({ currentLocale });
 			sizes="16x16"
 			href="/favicon_io/favicon-16x16.png"
 		/>
+		<link rel="manifest" href="/favicon_io/site.webmanifest" />
 	</head>
 	<body>
 		{showNavbar && <NavBar />}
