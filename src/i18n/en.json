@@ -11,7 +11,8 @@
 	},
 	"Hero": {
 		"title": "Hi👋🏻! I'm Aimar",
-		"subtitle": "With <span class=\"text-blue-500/90 font-medium\">2 years of experience</span> as a frontend developer, passionate about creating <span class=\"text-yellow-500/90 font-medium\">innovative and functional solutions</span>. From <span class=\"text-red-500/90 font-medium\">Panama</span> 🇵🇦, bringing my talent <span class=\"text-green-500/90 font-medium\">to the world</span>."
+		"subtitle": "With <span class=\"text-blue-500/90 font-medium\">2 years of experience</span> as a frontend developer, passionate about creating <span class=\"text-yellow-500/90 font-medium\">innovative and functional solutions</span>. From <span class=\"text-red-500/90 font-medium\">Panama</span> 🇵🇦, bringing my talent <span class=\"text-green-500/90 font-medium\">to the world</span>.",
+		"mail": "Email"
 	},
 	"AboutMe": {
 		"title": "About Me",
