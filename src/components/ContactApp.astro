@@ -54,10 +54,11 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 						placeholder={i18n.Contact["name-placeholder"]}
 						required
 					/>
-					<p id="name-error" class="hidden mt-2 text-sm text-red-500">
-						<span class="font-medium">Oops!</span>
-						{i18n.Contact["name-error"]}.
-					</p>
+					<p
+						id="name-error"
+						class="hidden mt-2 text-sm text-red-500"
+						set:html={i18n.Contact["name-error"]}
+					/>
 					<p
 						id="name-success"
 						class="hidden mt-2 text-sm text-green-500"
@@ -84,10 +85,8 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 					<p
 						id="email-error"
 						class="hidden mt-2 text-sm text-red-500"
-					>
-						<span class="font-medium">Oops!</span>
-						{i18n.Contact["email-error"]}.
-					</p>
+						set:html={i18n.Contact["email-error"]}
+					/>
 					<p
 						id="email-success"
 						class="hidden mt-2 text-sm text-green-500"
@@ -112,10 +111,8 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 					<p
 						id="message-error"
 						class="hidden mt-2 text-sm text-red-600 dark:text-red-500"
-					>
-						<span class="font-medium">Oops!</span>
-						{i18n.Contact["message-error"]}.
-					</p>
+						set:html={i18n.Contact["message-error"]}
+					/>
 					<p
 						id="message-success"
 						class="hidden mt-2 text-sm text-green-600 dark:text-green-500"
@@ -134,10 +131,6 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 
 			<!-- Script para validación del formulario -->
 			<script is:inline>
-				import { getI18N } from "../i18n";
-				const { currentLocale } = Astro;
-				const i18n = getI18N({ currentLocale });
-
 				document.addEventListener("DOMContentLoaded", () => {
 					const contactForm = document.getElementById("contactForm");
 					if (contactForm) {
@@ -171,12 +164,16 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 									contactForm.reset();
 									document
 										.querySelectorAll("input, textarea")
-										.forEach((el) =>
+										.forEach((el) => {
 											el.classList.remove(
 												"border-green-500",
 												"bg-green-50"
-											)
-										);
+											);
+											el.classList.remove(
+												"border-red-500",
+												"bg-red-50"
+											);
+										});
 								}
 							}
 						);
