@@ -55,18 +55,16 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 						required
 						class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 						placeholder={i18n.Contact["name-placeholder"]}
-						required
 					/>
-					<p
-						id="name-error"
-						class="hidden mt-2 text-sm text-red-500"
-						set:html={i18n.Contact["name-error"]}
-					/>
+					<p id="name-error" class="hidden mt-2 text-sm text-red-500">
+						{i18n.Contact["name-error"]}
+					</p>
 					<p
 						id="name-success"
 						class="hidden mt-2 text-sm text-green-500"
-						set:html={i18n.Contact["name-success"]}
-					/>
+					>
+						{i18n.Contact["name-success"]}
+					</p>
 				</div>
 
 				<!-- Correo -->
@@ -84,18 +82,19 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 						aria-describedby="helper-text-explanation"
 						class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 						placeholder={i18n.Contact["email-placeholder"]}
-						required
 					/>
 					<p
 						id="email-error"
 						class="hidden mt-2 text-sm text-red-500"
-						set:html={i18n.Contact["email-error"]}
-					/>
+					>
+						{i18n.Contact["email-error"]}
+					</p>
 					<p
 						id="email-success"
 						class="hidden mt-2 text-sm text-green-500"
-						set:html={i18n.Contact["email-success"]}
-					/>
+					>
+						{i18n.Contact["email-success"]}
+					</p>
 				</div>
 
 				<!-- Mensaje -->
@@ -112,17 +111,19 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 						required
 						class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 						placeholder={i18n.Contact["message-placeholder"]}
-						required></textarea>
+					></textarea>
 					<p
 						id="message-error"
 						class="hidden mt-2 text-sm text-red-600 dark:text-red-500"
-						set:html={i18n.Contact["message-error"]}
-					/>
+					>
+						{i18n.Contact["message-error"]}
+					</p>
 					<p
 						id="message-success"
 						class="hidden mt-2 text-sm text-green-600 dark:text-green-500"
-						set:html={i18n.Contact["message-success"]}
-					/>
+					>
+						{i18n.Contact["message-success"]}
+					</p>
 				</div>
 
 				<!-- Botón de envío -->
@@ -165,19 +166,7 @@ const homeUrl = currentLocale === "en" ? "/en/" : "/";
 								hasError |= !validateInput(message, "message");
 
 								if (!hasError) {
-									contactForm.reset();
-									document
-										.querySelectorAll("input, textarea")
-										.forEach((el) => {
-											el.classList.remove(
-												"border-green-500",
-												"bg-green-50"
-											);
-											el.classList.remove(
-												"border-red-500",
-												"bg-red-50"
-											);
-										});
+									contactForm.submit();
 								}
 							}
 						);
