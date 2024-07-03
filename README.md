@@ -34,7 +34,7 @@ Below is the performance report generated using [Lighthouse](https://developers.
 This report evaluates the performance, accessibility, best practices, and SEO of the website, ensuring that it meets the highest standards for modern web development.
 
 ## 🏗️ Project Structure
-The basic structure of an Astro project is as follows:
+The basic structure of my Astro project is as follows:
 
 ```text
 ├── dist/
