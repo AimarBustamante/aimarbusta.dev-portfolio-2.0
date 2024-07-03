@@ -11,7 +11,7 @@ export const projects: {
 		description:
 			"Mi más reciente portafolio personal y proyecto insignia. Una versión moderna, estética y mejorada de mi antiguo portafolio como muestra de mis habilidades como desarrollador y mis proyectos creados con las últimas tecnologías.",
 		github: "https://github.com/AimarBustamante/aimarbusta.dev-portfolio-2.0",
-		link: "https://aimarbusta.netlify.app/",
+		link: "https://aimarbusta.dev/",
 		image: "/images/projects/aimarbusta.dev-mockup-2.0.webp",
 		tag: ["Astro", "TypeScript", "Tailwind CSS"],
 	},
