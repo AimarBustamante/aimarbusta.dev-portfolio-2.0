@@ -28,6 +28,7 @@ const i18n = getI18N({ currentLocale });
 		href="https://www.linkedin.com/in/aimarbustamante/"
 		target="_blank"
 		rel="noopener"
+		aria-label="LinkedIn"
 		class="flex items-center transition md:justify-center md:hover:scale-105 italic"
 		><Badge>#OpenToWork</Badge></a
 	>
@@ -38,19 +39,19 @@ const i18n = getI18N({ currentLocale });
 </h2>
 
 <nav class="flex gap-4 mt-5 flex-wrap">
-	<SocialPill href="https://www.linkedin.com/in/aimarbustamante/">
+	<SocialPill href="https://www.linkedin.com/in/aimarbustamante/" aria-label="LinkedIn">
 		<LinkedInIcon class="size-4 md:size-6" /> LinkedIn
 	</SocialPill>
-	<SocialPill href="https://github.com/AimarBustamante">
+	<SocialPill href="https://github.com/AimarBustamante" aria-label="GitHub">
 		<GitHubIcon class="size-4 md:size-6" /> GitHub
 	</SocialPill>
-	<SocialPill href="mailto:aimarbustamante379@hotmail.com">
+	<SocialPill href="mailto:aimarbustamante379@hotmail.com" aria-label={i18n.Hero.mail}>
 		<MailIcon class="size-5 md:size-7" /> {i18n.Hero.mail}
 	</SocialPill>
-	<SocialPill href="https://www.instagram.com/aimarbusta.dev/">
+	<SocialPill href="https://www.instagram.com/aimarbusta.dev/" aria-label="Instagram">
 		<InstagramIcon class="size-4 md:size-6" /> Instagram
 	</SocialPill>
-	<SocialPill href="https://wa.me/50765167602">
+	<SocialPill href="https://wa.me/50765167602" aria-label="WhatsApp">
 		<WhatsAppIcon class="size-4 md:size-6" /> WhatsApp
 	</SocialPill>
 </nav>
