@@ -56,7 +56,7 @@ function getTranslation(key: string): string {
 							{getTranslation(`project-${index + 1}`)}
 						</h2>
 						<div class="flex flex-wrap mt-2">
-							<ul class="flex flex-row my-2 gap-x-2">
+							<ul class="flex flex-row my-2 gap-2 flex-wrap">
 								{tag.map((tag) => (
 									<li
 										style={`background-color: ${skillMap[tag] || "#000"}`}

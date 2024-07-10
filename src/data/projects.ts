@@ -34,12 +34,12 @@ export const projects: {
 		tag: ["React", "TypeScript", "Tailwind CSS", "Vite"],
 	},
 	{
-		title: "Contador de Calorias",
+		title: "Planificador de Gastos",
 		description:
-			"Aplicación web en la que puedes llevar un registro de las calorías consumidas junto con las calorías quemadas a través de la actividad física.",
-		github: "https://github.com/AimarBustamante/Calorie-Tracker",
-		link: "https://calorie-tracker-04.netlify.app/",
-		image: "/images/projects/calorie-tracker-mockup.webp",
-		tag: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+			"Aplicación web en la que puedes gestionar tu presupuesto mensual o semanal. Puedes añadir tu presupuesto, gastos, editar y eliminar tus gastos, y filtrar los gastos por categoría.",
+		github: "https://github.com/AimarBustamante/Expense-Planner/tree/main",
+		link: "https://budget-planner-04.netlify.app/",
+		image: "/images/projects/budget-tracker-mockup.webp",
+		tag: ["React", "TypeScript", "Tailwind CSS", "Vite", "Headless UI"],
 	},
 ];

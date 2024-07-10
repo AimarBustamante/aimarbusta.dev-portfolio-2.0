@@ -26,6 +26,7 @@ export const skills = (
 		{ name: "GitHub", color: "#181717" },
 		{ name: "Git", color: "#F05032" },
 		{ name: "Vite", color: "#646CFF" },
+		{ name: "Headless UI", color: "#66E3FF" },
 		{ name: "Visual Studio Code", color: "#007ACC" },
 		{ name: "Notion", color: "#000000" },
 		{ name: "Shopify", color: "#7AB55C" },
