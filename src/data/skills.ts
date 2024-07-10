@@ -25,7 +25,7 @@ export const skills = (
 	[translations["Skills.others"]]: [
 		{ name: "GitHub", color: "#181717" },
 		{ name: "Git", color: "#F05032" },
-		{ name: "Vite", color: "#646CFF" },
+		{ name: "Vite", color: "#B73BFE" },
 		{ name: "Headless UI", color: "#66E3FF" },
 		{ name: "Visual Studio Code", color: "#007ACC" },
 		{ name: "Notion", color: "#000000" },
