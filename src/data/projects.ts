@@ -7,13 +7,13 @@ export const projects: {
 	tag: string[];
 }[] = [
 	{
-		title: "Mi Portafolio",
+		title: "Contador de Calorías y Ejercicios",
 		description:
-			"Mi más reciente portafolio personal y proyecto insignia. Una versión moderna, estética y mejorada de mi antiguo portafolio como muestra de mis habilidades como desarrollador y mis proyectos creados con las últimas tecnologías.",
-		github: "https://github.com/AimarBustamante/aimarbusta.dev-portfolio-2.0",
-		link: "https://aimarbusta.dev/",
-		image: "/images/projects/aimarbusta.dev-mockup-2.0.webp",
-		tag: ["Astro", "TypeScript", "Tailwind CSS"],
+			"Aplicación web en la que puede llevar un registro de las calorías consumidas junto con las calorías quemadas a través de la actividad física. Además, puedes ver la diferencia, lo que te ayuda a determinar si tienes déficit o superávit calórico.",
+		github: "https://github.com/AimarBustamante/Calorie-Tracker",
+		link: "https://calorie-tracker-04.netlify.app/",
+		image: "/images/projects/calorie-tracker-mockup.webp",
+		tag: ["React", "TypeScript", "Tailwind CSS", "Vite"],
 	},
 	{
 		title: "GuitarLA - TS",
