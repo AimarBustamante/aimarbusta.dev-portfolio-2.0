@@ -3,15 +3,18 @@
 ![mockup-browser](public/images/mockup-for-readme.png)
 
 ## 📖 Project Description
+
 My latest personal portfolio and flagship project. A representation of my latest personal showcase, highlighting my growth and capabilities as a developer. This modern and refined version of my previous portfolio demonstrates my proficiency with contemporary web technologies and my dedication to creating visually appealing and highly functional web applications.
 
 ## 🛠️ Technologies Used
+
 ![Astro](https://img.shields.io/badge/Astro-0C1222?style=for-the-badge&logo=astro&logoColor=FDFDFE) 
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind_CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 
 ## 🎨 Project Features
+
 - **Mobile First**: Designed with a mobile-first approach to ensure a seamless experience across all devices.
 - **Contact Form**: A functional and interactive contact form for visitors to get in touch with me.
 - **Multilingual**: The site is available in both English and Spanish, utilizing the i18n library for seamless language switching.
@@ -33,7 +36,24 @@ Below is the performance report generated using [Lighthouse](https://developers.
 
 This report evaluates the performance, accessibility, best practices, and SEO of the website, ensuring that it meets the highest standards for modern web development.
 
+## 🖼️ Screenshots
+
+### Desktop View
+
+![Mockup-for-readme](public/images/mockup-for-readme.png)
+![Mockup-for-readme-2](public/images/mockup-for-readme-2.png)
+![Mockup-for-readme-3](public/images/mockup-for-readme-3.png)
+![Mockup-for-readme-4](public/images/mockup-for-readme-4.png)
+
+### Mobile View
+
+![Mockup-for-readme-mobile](public/images/mockup-for-readme-mobile.png)
+![Mockup-for-readme-mobile-2](public/images/mockup-for-readme-mobile-2.png)
+![Mockup-for-readme-mobile-3](public/images/mockup-for-readme-mobile-3.png)
+![Mockup-for-readme-mobile-4](public/images/mockup-for-readme-mobile-4.png)
+
 ## 🏗️ Project Structure
+
 The basic structure of my Astro project is as follows:
 
 ```text
@@ -68,7 +88,6 @@ The basic structure of my Astro project is as follows:
 ```
 
 ## 📬 Contact Information
-Please fill in your contact details here.
 
 [![My_Portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://aimarbusta.dev/)
 [![LinkedIn](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aimarbustamante/)
