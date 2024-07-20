@@ -31,5 +31,8 @@ export const skills = (
 		{ name: "Notion", color: "#000000" },
 		{ name: "Shopify", color: "#428623" },
 		{ name: "ChatGPT", color: "#27856E" },
+		{ name: "CSS Modules", color: "#000000" },
+		{ name: "Axios", color: "#5A29E4" },
+		{ name: "Zod", color: "#3E67B1" },
 	],
 });
