@@ -16,13 +16,13 @@ export const projects: {
 		tag: ["React", "TypeScript", "Tailwind CSS", "Vite"],
 	},
 	{
-		title: "GuitarLA - TS",
+		title: "Buscador de Clima",
 		description:
-			"Plataforma de comercio electrónico de guitarras que incluye un carrito de la compra. Los usuarios pueden navegar por una selección de guitarras, añadir artículos a su cesta y gestionar las cantidades y los precios dentro de la misma.",
-		github: "https://github.com/AimarBustamante/GuitarLA-TS",
-		link: "https://guitarla-ts-04.netlify.app/",
-		image: "/images/projects/guitar-la-mockup.webp",
-		tag: ["React", "TypeScript", "CSS", "Vite"],
+			"Aplicación web en la que se puede consultar el tiempo de varias ciudades del mundo con información dinámica obtenida de una API.",
+		github: "https://github.com/AimarBustamante/Weather-App",
+		link: "https://weather-app-004.netlify.app/",
+		image: "/images/projects/weather-app.webp",
+		tag: ["React", "TypeScript", "CSS Modules", "Vite", "Axios", "Zod"],
 	},
 	{
 		title: "Calculadora de Propinas y Consumo",
