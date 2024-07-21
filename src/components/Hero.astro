@@ -6,8 +6,6 @@ import SocialPill from "../components/SocialPill.astro";
 import LinkedInIcon from "../components/icons/LinkedIn.astro";
 import GitHubIcon from "../components/icons/GitHub.astro";
 import MailIcon from "../components/icons/Mail.astro";
-import InstagramIcon from "../components/icons/InstagramIcon.astro";
-import WhatsAppIcon from "../components/icons/WhatsAppIcon.astro";
 
 const personalImageAlt = "Aimar Bustamante";
 
@@ -34,24 +32,26 @@ const i18n = getI18N({ currentLocale });
 	>
 </h1>
 
-<h2 set:html={i18n.Hero.subtitle} class="text-xl lg:text-2xl opacity-80 text-pretty max-w-[700px] text-gray-100">
-
-</h2>
+<h2
+	set:html={i18n.Hero.subtitle}
+	class="text-xl lg:text-2xl opacity-80 text-pretty max-w-[700px] text-gray-100"
+/>
 
 <nav class="flex gap-4 mt-5 flex-wrap">
-	<SocialPill href="https://www.linkedin.com/in/aimarbustamante/" aria-label="LinkedIn">
+	<SocialPill
+		href="https://www.linkedin.com/in/aimarbustamante/"
+		aria-label="LinkedIn"
+	>
 		<LinkedInIcon class="size-4 md:size-6" /> LinkedIn
 	</SocialPill>
 	<SocialPill href="https://github.com/AimarBustamante" aria-label="GitHub">
 		<GitHubIcon class="size-4 md:size-6" /> GitHub
 	</SocialPill>
-	<SocialPill href="mailto:aimarbustamante379@hotmail.com" aria-label={i18n.Hero.mail}>
-		<MailIcon class="size-5 md:size-7" /> {i18n.Hero.mail}
-	</SocialPill>
-	<SocialPill href="https://www.instagram.com/aimarbusta.dev/" aria-label="Instagram">
-		<InstagramIcon class="size-4 md:size-6" /> Instagram
-	</SocialPill>
-	<SocialPill href="https://wa.me/50765167602" aria-label="WhatsApp">
-		<WhatsAppIcon class="size-4 md:size-6" /> WhatsApp
+	<SocialPill
+		href="mailto:aimarbustamante379@hotmail.com"
+		aria-label={i18n.Hero.mail}
+	>
+		<MailIcon class="size-5 md:size-7" />
+		{i18n.Hero.mail}
 	</SocialPill>
 </nav>
